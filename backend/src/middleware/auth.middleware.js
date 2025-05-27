@@ -3,10 +3,10 @@ import User from "../models/user.model.js";
 
 export const protectRoute = async (req, res, next) => {
     try{
-        const token = req.cookies.jwt
+        const token = req.cookies.jwt;
 
         if(!token){
-            return res(401).json({message: "Unauthorized - No Token Provided"}); 
+            return res.status(401).json({message: "Unauthorized - No Token Provided"}); 
         }
 
         const decoded = jwt.verify(token, process.env.JWT_SECRET); 
@@ -23,6 +23,6 @@ export const protectRoute = async (req, res, next) => {
         next(); 
         
     } catch (error) {
-        console.long("Error in protectRoute middleware:",  error.message); 
+        console.log("Error in protectRoute middleware:",  error.message); 
     }
 }
