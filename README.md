@@ -27,7 +27,7 @@ This is a full-stack, real-time chat application that enables users to securely 
 - Cloudinary (for image uploads)
 - cookie-parser, cors, dotenv
 
-## 📁 Project Structure
+## Project Structure
 
 BlinkChat/
 ├── backend/ # Express backend
@@ -40,7 +40,7 @@ BlinkChat/
 └── README.md
 
 
-## ⚙️ Getting Started (Local Development)
+## Getting Started (Local Development)
 
 1. Clone the repository
 2. Set up the backend
@@ -59,7 +59,7 @@ cd ../frontend
 npm install
 npm run dev
 
-📦 Backend Environment Variables
+ Backend Environment Variables
 Create a .env file in /backend with the following:
 
 env
