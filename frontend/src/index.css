@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html[data-theme='retro'],
+    html[data-theme='cupcake'],
+    html[data-theme='valentine'],
+    html[data-theme='dracula'],
+    html[data-theme='coffee'] {
+      /* force base color class to trigger build */
+      background-color: theme('colors.base-100');
+    }
+  }
