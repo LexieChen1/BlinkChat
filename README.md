@@ -27,22 +27,11 @@ This is a full-stack, real-time chat application that enables users to securely 
 - Cloudinary (for image uploads)
 - cookie-parser, cors, dotenv
 
-## Project Structure
-
-BlinkChat/
-├── backend/ # Express backend
-│ └── src/ # Backend source code
-│ └── .env # Backend environment config
-├── frontend/ # React frontend
-│ └── src/ # Frontend components/pages/store
-├── .node-version # Ensures Node 18 on platforms like Render
-├── package.json # Root metadata
-└── README.md
-
 
 ## Getting Started (Local Development)
 
 ### Setup .env file
+```js
 
 MONGODB_URI=...
 PORT=5001
