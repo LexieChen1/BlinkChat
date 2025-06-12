@@ -42,35 +42,28 @@ BlinkChat/
 
 ## Getting Started (Local Development)
 
-1. Clone the repository
-2. Set up the backend
-bash
-Copy
-Edit
-cd backend
-npm install
-cp .env.example .env  # or create .env manually
+### Setup .env file
+
+MONGODB_URI=...
+PORT=5001
+JWT_SECRET=...
+CLOUDINARY_CLOUD_NAME=...
+CLOUDINARY_API_KEY=...
+CLOUDINARY_API_SECRET=...
+NODE_ENV=development
+
+### Build the app
+
+```shell
+npm run build
+```
+
+### Start the app
+
+```shell
 npm start
-3. Set up the frontend
-bash
-Copy
-Edit
-cd ../frontend
-npm install
-npm run dev
+```
 
- Backend Environment Variables
-Create a .env file in /backend with the following:
-
-env
-Copy
-Edit
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_key
-CLOUDINARY_API_SECRET=your_cloudinary_secret
 
 License
 MIT © 
