@@ -50,7 +50,7 @@ const SignUpPage = () => {
                 </div>
               </div>
     
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} autoComplete="off" className="space-y-6">
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text font-medium">Full Name</span>
@@ -61,6 +61,7 @@ const SignUpPage = () => {
                     </div>
                     <input
                       type="text"
+                      autoComplete="off"
                       className={`input input-bordered w-full pl-10`}
                       placeholder="John Doe"
                       value={formData.fullName}
@@ -80,6 +81,7 @@ const SignUpPage = () => {
                     <input
                       type="email"
                       className={`input input-bordered w-full pl-10`}
+                      autoComplete="off"
                       placeholder="you@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -98,6 +100,7 @@ const SignUpPage = () => {
                     <input
                       type={showPassword ? "text" : "password"}
                       className={`input input-bordered w-full pl-10`}
+                      autoComplete="new-password"
                       placeholder="••••••••"
                       value={formData.password}
                       onChange={(e) => setFormData({ ...formData, password: e.target.value })}
